@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allerta&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--bgcolor);
+}
+:root {
+  --bgcolor:  #1D1D1D;
+  --primary-color: #08FDD8;
+  --p-color: #CCD6F6;
+}
+button {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  border-radius: 5px;
+  background-color: transparent;
+}
+p {
+  font-family: 'Roboto',sans-serif;
+  color: var(--p-color);
+}
+h2,
+h1,
+h3 {
+  font-family: 'Yeseva One',sans-serif;
+}
+.number {
+  color: var(--primary-color);
+  font-family: 'Allerta',sans-serif;
+}
+.container {
+  width: 90%;
+  margin: auto;
+}
+ul,li,a {
+  list-style: none;
+  text-decoration: none;
+  color: var(--p-color);
+}

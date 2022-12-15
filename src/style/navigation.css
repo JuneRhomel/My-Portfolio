@@ -1,0 +1,25 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0;
+}
+.manu-nav {
+    display: flex;
+    gap: 40px;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+.manu-nav li a {
+    font-family: 'Roboto',sans-serif;
+    font-size: 12px;
+}
+.btn-resume {
+    width: 131px;
+    height: 33px;
+    font-size: 12px;
+    font-weight: 700;
+}
