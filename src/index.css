@@ -8,11 +8,13 @@
 }
 body {
   background-color: var(--bgcolor);
+  overflow: hidden;
 }
 :root {
   --bgcolor:  #1D1D1D;
   --primary-color: #08FDD8;
-  --p-color: #CCD6F6;
+  --h-color: #CCD6F6;
+  --p-color: #8892B0;
 }
 button {
   border: 1px solid var(--primary-color);
@@ -41,4 +43,17 @@ ul,li,a {
   list-style: none;
   text-decoration: none;
   color: var(--p-color);
+}
+@media only screen and (min-width: 900px) {
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  .container {
+    width: 70%;
+    margin: auto;
+    max-width: 1320px;
+  }
 }

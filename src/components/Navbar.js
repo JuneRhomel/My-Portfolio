@@ -2,9 +2,17 @@ import Logo from "../assets/Group 8.svg"
 import "../style/navigation.css"
 
 export default function Navbar() {
+    const navBTn = ()=> {
+        document.getElementById("bar-btn1").classList.toggle("barRotate1")
+        document.getElementById("bar-btn2").classList.toggle("barRotate2")
+        document.querySelector(".menu").classList.toggle("active-menu")
+    }
+
+
+
     return (
         <header >
-            <div className="container">
+            <div className="container-nav">
                 <nav className="navigation">
                     <a>
                         <img src={Logo} alt="J.R LOGO" />
@@ -17,7 +25,13 @@ export default function Navbar() {
                         <li><a href=""><span className="number">04.</span>Contact</a></li>
                     </ul>
                     <button className="btn-resume">Resume</button>
-                    </div>
+                </div>
+                    <button className="menu-btn" onClick={navBTn} id="menu-btn">
+                        <div className="bar " id="bar-btn1"></div>
+                        <div className="bar"></div>
+                        <div className="bar " id="bar-btn2"></div>
+                    </button>
+                        
                 </nav>
 
             </div>

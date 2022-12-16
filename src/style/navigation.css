@@ -1,25 +1,131 @@
+
+.container-nav {
+    width: 90%;
+    margin: auto;
+}
 .navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1em 0;
 }
-.manu-nav {
-    display: flex;
-    gap: 40px;
-}
-.menu {
-    display: flex;
-    align-items: center;
-    gap: 2em;
-}
+
 .manu-nav li a {
     font-family: 'Roboto',sans-serif;
-    font-size: 12px;
+    font-size: 18px;
 }
 .btn-resume {
-    width: 131px;
-    height: 33px;
-    font-size: 12px;
+    width: 141px;
+    height: 43px;
+    font-size: 16px;
     font-weight: 700;
+}
+.menu-btn {
+    float: right;
+    border: none;
+    position: relative;
+}
+
+.bar {
+    margin-bottom: 10px;
+    height: 2px;
+    width: 35px;
+    background-color: var(--primary-color);
+    transition: .4s ease-in-out;
+}
+.barRotate1 {
+    position: absolute;
+    transform: rotate(40deg);
+    width: 20px;
+    right: -2px;
+    top: -6px;
+    transition: .4s ease-in-out;
+
+}
+.barRotate2 {
+    position: absolute;
+    transform: rotate(-40deg);
+    width: 20px;
+    right: -2px;
+    top: 6px;
+    transition: .4s ease-in-out;
+}
+
+.active-menu {
+    display: block;
+}
+
+.menu {
+    transform: translateX(100%);
+    transition: .3s ease-in-out;
+    width: 80%;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #333333;
+    justify-content: center;
+    align-items: center;
+}
+.active-menu{
+    transform: translateX(0);
+}
+.manu-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.manu-nav li {
+    width: 100%;
+    text-align: center;
+}
+.manu-nav a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 2em 0;
+}
+
+@media only screen and (min-width: 900px) {
+    .menu-btn {
+        display: none;
+    }
+    .menu {
+        transform: none;
+        width: auto;
+        height: auto;
+        background: none;
+        position:unset;
+        align-items: center;
+        flex-direction: row;
+        justify-content: normal;
+        gap: 1em;
+    }
+    .manu-nav {
+        flex-direction: row;
+        gap: 40px;
+    }
+    .manu-nav {
+        gap: 0;
+        width: auto;
+    }
+    .manu-nav li {
+        width: auto;
+    }
+    .manu-nav a {
+        display: block;
+        padding: 0 2em;
+        width: auto;
+        font-size: 13px !important;
+    }
+    .btn-resume {
+        width: 131px;
+        height: 33px;
+        font-size: 14px;
+        font-weight: 700;
+    }
+
 }
