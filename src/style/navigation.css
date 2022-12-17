@@ -9,6 +9,10 @@
     align-items: center;
     padding: 1em 0;
 }
+header {
+    position: relative;
+    overflow-x: clip;
+}
 
 .manu-nav li a {
     font-family: 'Roboto',sans-serif;
@@ -16,9 +20,9 @@
 }
 .btn-resume {
     width: 141px;
-    height: 43px;
     font-size: 16px;
     font-weight: 700;
+    height: 33px;
 }
 .menu-btn {
     float: right;
@@ -123,7 +127,7 @@
     }
     .btn-resume {
         width: 131px;
-        height: 33px;
+        height: 45px;
         font-size: 14px;
         font-weight: 700;
     }

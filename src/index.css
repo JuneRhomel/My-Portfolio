@@ -5,10 +5,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto',sans-serif;
 }
 body {
   background-color: var(--bgcolor);
-  overflow: hidden;
+  overflow-x: hidden;
 }
 :root {
   --bgcolor:  #1D1D1D;
@@ -31,6 +32,24 @@ h1,
 h3 {
   font-family: 'Yeseva One',sans-serif;
 }
+h3 {
+  color: var(--h-color);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  margin-bottom: 38px;
+}
+h3 svg {
+  width: 50%;
+}
+span {
+  color: var(--primary-color);
+  font-family: 'Allerta';
+}
+h4 {
+  color: var(--p-color);
+}
 .number {
   color: var(--primary-color);
   font-family: 'Allerta',sans-serif;
@@ -38,6 +57,7 @@ h3 {
 .container {
   width: 90%;
   margin: auto;
+  overflow: hidden;
 }
 ul,li,a {
   list-style: none;
@@ -50,9 +70,9 @@ ul,li,a {
     margin: auto;
   }
 }
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1400px) {
   .container {
-    width: 70%;
+    width: 90%;
     margin: auto;
     max-width: 1320px;
   }
