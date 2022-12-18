@@ -73,7 +73,7 @@ export default function Tools() {
             )
     })
     return (
-        <div>
+        <div className='logo-box'>
             <h3><span>02.</span>Tools I Used <svg width="308" height="1" viewBox="0 0 308 1" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <line y1="0.65" x2="308" y2="0.65" stroke="#CCD6F6" stroke-width="0.7" />
             </svg>

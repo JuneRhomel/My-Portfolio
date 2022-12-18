@@ -1,6 +1,4 @@
-.about {
-    max-width: 35em;
-}
+
 
 .about p {
     margin-top: 38px;
@@ -34,4 +32,26 @@
 .logo img {
     width: 60px;
     object-fit: contain;
+}
+.about-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.logo-box {
+    max-width: 30em;
+}
+.line-container {
+    display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+
+    .about {
+        max-width: 35em;
+    }
+    .skills {
+        align-self: flex-end;
+    }
+
 }

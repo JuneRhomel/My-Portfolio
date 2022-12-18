@@ -1,10 +1,29 @@
 import "../style/about.css"
 
+
+// let path = document.querySelector('path');
+// let pathLength = path.getTotalLength();
+
+// path.style.strokeDasharray = pathLength + " "+ pathLength;
+// path.style.strokeDashoffset =pathLength;
+
+// window.addEventListener("scroll", ()=> {
+//     let scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight -document.documentElement.clientHeight);
+
+//     let drawLength = pathLength * scrollPercentage;
+
+//     path.style.strokeDasharray = pathLength - drawLength;
+// })
+
 export default function About() {
+
+
     return (
-        <section>
+        <section className="about-section">
+
+
             <div className="about">
-                <h3><span>01.</span>About Me <svg width="308" height="1" viewBox="0 0 308 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <h3><span>01.</span>About Me <svg viewBox="0 0 308 1" fill="none">
                     <line y1="0.65" x2="308" y2="0.65" stroke="#CCD6F6" stroke-width="0.7" />
                 </svg>
                 </h3>

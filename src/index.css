@@ -12,10 +12,13 @@ body {
   overflow-x: hidden;
 }
 :root {
+
   --bgcolor:  #1D1D1D;
   --primary-color: #08FDD8;
   --h-color: #CCD6F6;
   --p-color: #8892B0;
+  --proj-bg: #333333f3;
+  --projPC-bg: #333333;
 }
 button {
   border: 1px solid var(--primary-color);
