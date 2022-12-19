@@ -1,0 +1,48 @@
+.list-project {
+    margin-top: 4em;
+}
+.box-list {
+    margin-top: 2.2em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+.list-project h2 {
+    font-weight: 700;
+    font-size: 25px;
+    margin: 0;
+    text-align: center;
+    color: var(--h-color);
+}
+.list-project .tag {
+    color: var(--primary-color);
+    display: block;
+    text-align: center !important;
+}
+.main-box-project {
+    background-color: var(--projPC-bg);
+    padding: 2em;
+    border-radius: 5px;
+    max-width: 25em;
+}
+.link-project {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+    margin-bottom: 1.8em;
+}
+.main-box-project h4 {
+    font-size: 25px;
+    margin-bottom: 11px;
+    color: var(--h-color);
+}
+.main-box-project p {
+    line-height: 173.19%;
+    margin-bottom: 30px;
+}
+.main-box-project .tools-used {
+    font-size: 13px;
+    display: flex;
+    gap: 2em;
+    color: var( --gray-color);
+}

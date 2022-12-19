@@ -6,18 +6,19 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Tools from './components/Tools';
 import Project from "./components/Project"
+import ListProject from './components/ListProject';
 function App() {
   return (
     <div>
       <Navbar />
       <Hero />
-
       <div className="container about-skills">
         <About />
         <Skills />
         <Tools />
       </div>
-      < Project />
+      <Project />
+      <ListProject />
     </div>
   );
 }

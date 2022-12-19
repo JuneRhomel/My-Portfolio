@@ -67,6 +67,9 @@
     object-fit: cover;
     z-index: -1;
 }
+.box-project2 {
+    margin-top: 4em;
+}
 
 @media only screen and (min-width: 1000px) {
     .box-project {
@@ -105,4 +108,31 @@
         margin-left: auto;
         max-width: 374px;
     }
+    .bg-poject2 {
+        right: 0 !important;
+        left: auto !important;
+    }
+    .text-project2 h2{
+        text-align: start !important;
+    }
+    .text-project2 .tag {
+        text-align: start !important;
+    }
+    .text-project2 .p-box, p {
+        margin: 0;
+    }
+    .text-project2 .p-box p {
+        text-align: start;
+    }
+    .text-project2 .list-tools-used {
+        margin-left: 0;
+        justify-content: start;
+    }
+    .text-project2  .btn-project {
+        justify-content: start;
+    }
+    .box-project2 {
+        margin-top: 4em;
+    }
+
 }

@@ -15,8 +15,9 @@ body {
 
   --bgcolor:  #1D1D1D;
   --primary-color: #08FDD8;
-  --h-color: #CCD6F6;
-  --p-color: #8892B0;
+  --h-color: #ffffff;
+  --p-color: #CCD6F6;
+  --gray-color:#8892B0;
   --proj-bg: #333333f3;
   --projPC-bg: #333333;
 }
@@ -53,6 +54,7 @@ span {
 h4 {
   color: var(--p-color);
 }
+
 .number {
   color: var(--primary-color);
   font-family: 'Allerta',sans-serif;
