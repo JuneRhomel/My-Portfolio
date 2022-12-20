@@ -5,6 +5,7 @@
     margin-top: 2.2em;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 2em;
 }
 .list-project h2 {
@@ -45,4 +46,14 @@
     display: flex;
     gap: 2em;
     color: var( --gray-color);
+}
+.btn-more {
+    width: 100%;
+    text-align: center;
+}
+.btn-more button {
+    width: 15em;
+    height: 50px;
+    font-weight: 700;
+    font-size: 1em;
 }
