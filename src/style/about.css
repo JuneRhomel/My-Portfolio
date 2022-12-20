@@ -2,24 +2,29 @@
 
 .about p {
     margin-top: 38px;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 160.5%;
+    
 }
 .skills-box ul{
     margin-left: 10px;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 15px;
+}
+.skills-box ul li {
+    color: var(--gray-color);
 }
 .skills-box  {
     margin-bottom: 20px;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 20px;
 }
 .tools-logo {
+    margin-top: 2em;
     display: flex;
-    gap: 30px;
+    gap: 40px;
     justify-content: space-around;
     flex-wrap: wrap;
 }
@@ -44,6 +49,7 @@
 .line-container {
     display: none;
 }
+
 
 @media only screen and (min-width: 1000px) {
 

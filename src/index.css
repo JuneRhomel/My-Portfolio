@@ -69,6 +69,26 @@ ul,li,a {
   text-decoration: none;
   color: var(--p-color);
 }
+a {
+  cursor: pointer;
+}
+a:hover {
+  color: var(--primary-color);
+}
+.social-sticky {
+  visibility: hidden;
+  position: fixed;
+  width: 30px;
+  bottom: 0;
+  left: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 39px;
+  font-size: 20px;
+}
+
+
 @media only screen and (min-width: 900px) {
   .container {
     width: 90%;
@@ -79,6 +99,7 @@ ul,li,a {
   .container {
     width: 90%;
     margin: auto;
-    max-width: 1320px;
+    max-width: 1300px;
   }
 }
+

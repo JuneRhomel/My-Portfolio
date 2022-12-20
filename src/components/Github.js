@@ -1,7 +1,7 @@
 import { getAllByAltText } from '@testing-library/react';
 import React, { useState, useEffect } from 'react';
 
-const token = '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';
+const token = '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';
 
 function Github() {
     const [repos, setRepos] = useState([]);

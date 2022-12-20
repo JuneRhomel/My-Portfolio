@@ -1,0 +1,75 @@
+footer {
+    margin-top: 117px;
+}
+
+.footer-container {
+    text-align: center;
+}
+.footer-container h3 {
+    font-size: 13px;
+    display: block;
+    text-align: center;
+    margin: 7px 0;
+}
+.footer-container span {
+    font-family: 'Yeseva One',sans-serif;
+}
+.used  {
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    gap: 15px;
+    color: var(--gray-color);
+    margin: 10px 0;
+}
+.social-footer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 25px;
+    color: var(--gray-color);
+    margin-bottom: 45px;
+}
+
+.social-sticky {
+    visibility: hidden;
+    position: fixed;
+    width: 30px;
+    bottom: 0;
+    left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 39px;
+    font-size: 20px;
+}
+
+
+.email-sticky {
+    visibility: hidden;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8em;
+    letter-spacing: 0.155em;
+    font-size: 13px;
+    font-weight: 300;
+    bottom: 0;
+    right: 50px;
+}
+.email-sticky a {
+    transform: rotate(90deg);
+}
+
+@media only screen and (min-width:1554px) {
+    .social-sticky {
+        visibility: visible;
+    }
+    .social-footer {
+        display: none;
+    }
+    .email-sticky {
+        visibility: visible;
+    }
+}

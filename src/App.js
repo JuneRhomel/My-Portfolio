@@ -7,6 +7,9 @@ import Skills from './components/Skills';
 import Tools from './components/Tools';
 import Project from "./components/Project"
 import ListProject from './components/ListProject';
+import Contact from "./components/Contact"
+import Footer from './components/Footer';
+import Sticky from './components/Sticky';
 function App() {
   return (
     <div>
@@ -19,6 +22,9 @@ function App() {
       </div>
       <Project />
       <ListProject />
+      <Contact/>
+      <Footer />
+      <Sticky />
     </div>
   );
 }
