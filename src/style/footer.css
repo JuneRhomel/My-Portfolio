@@ -43,7 +43,12 @@ footer {
     gap: 39px;
     font-size: 20px;
 }
-
+.social-sticky a{
+    transition: .2s ease-in-out;
+}
+.social-sticky a:hover{
+    transform: translateY(-5px);
+}
 
 .email-sticky {
     visibility: hidden;
@@ -57,9 +62,14 @@ footer {
     font-weight: 300;
     bottom: 0;
     right: 50px;
+
 }
 .email-sticky a {
     transform: rotate(90deg);
+    transition: .2s ease-in-out;
+}
+.email-sticky a:hover {
+    margin-bottom: 10px;
 }
 
 @media only screen and (min-width:1554px) {

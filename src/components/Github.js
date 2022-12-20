@@ -1,7 +1,11 @@
 import { getAllByAltText } from '@testing-library/react';
 import React, { useState, useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use <link> for styles
+// ..
+AOS.init();
 
-const token = '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';
+const token = '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';
 
 function Github() {
     const [repos, setRepos] = useState([]);
@@ -49,7 +53,7 @@ function Github() {
         <div className='box-list' >
             {
             filteredRepos.slice(0,loadMore).map(repo => (
-                <a href={repo.html_url} target="_blank" rel="noopener noreferrer" className='main-box-project' key={repo.id}>
+                <a data-aos="fade-up" href={repo.html_url} target="_blank" rel="noopener noreferrer" className='main-box-project' key={repo.id}>
                     <div className='link-project'>
                         <a class="fa-solid fa-folder-open"></a>
                         <small>{repo.created_at.slice(0,10)}</small>

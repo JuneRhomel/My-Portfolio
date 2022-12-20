@@ -73,7 +73,7 @@ export default function Tools() {
             )
     })
     return (
-        <div className='logo-box'>
+        <div className='logo-box'data-aos="fade-right">
             <h3><span>02.</span>Tools I Used <svg viewBox="0 0 308 1" fill="none">
                     <line y1="0.65" x2="308" y2="0.65" stroke="#CCD6F6" stroke-width="0.7" />
                 </svg>

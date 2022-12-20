@@ -9,7 +9,10 @@
 }
 body {
   background-color: var(--bgcolor);
-  overflow-x: hidden;
+
+}
+.body-hidden {
+  overflow: hidden;
 }
 :root {
 
@@ -26,6 +29,27 @@ button {
   color: var(--primary-color);
   border-radius: 5px;
   background-color: transparent;
+  position: relative;
+  transition: .3s ease-in-out;
+  
+}
+button::before {
+  content: "";
+  width: 0;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #08fdd859;
+  transition: .3s ease-in-out;
+  z-index: -1;
+}
+button:hover{
+  color: var(--h-color);
+}
+button:hover:before {
+  width: 100%;
 }
 p {
   font-family: 'Roboto',sans-serif;
@@ -75,18 +99,7 @@ a {
 a:hover {
   color: var(--primary-color);
 }
-.social-sticky {
-  visibility: hidden;
-  position: fixed;
-  width: 30px;
-  bottom: 0;
-  left: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 39px;
-  font-size: 20px;
-}
+
 
 
 @media only screen and (min-width: 900px) {

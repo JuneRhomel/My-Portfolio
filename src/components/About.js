@@ -19,8 +19,7 @@ export default function About() {
 
 
     return (
-        <section className="about-section">
-
+        <section className="about-section"  data-aos="fade-right">
 
             <div className="about">
                 <h3><span>01.</span>About Me <svg viewBox="0 0 308 1" fill="none">

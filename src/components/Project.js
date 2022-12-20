@@ -8,8 +8,8 @@ export default function project() {
         <section className='main-project'>
 
             <div className="container">
-                <h3 className='project-h3'><span>04.</span>Some Things I’ve Built</h3>
-                <div className='box-project'>
+                <h3  className='project-h3'><span>04.</span>Some Things I’ve Built</h3>
+                <div className='box-project'  data-aos="zoom-out">
                     <div className='bg-poject'>
                         <div className='bg'>
                             <div className='overlay'></div>
@@ -33,7 +33,7 @@ export default function project() {
                     </div>
                 </div>
 
-                <div className='box-project box-project2'>
+                <div className='box-project box-project2' data-aos="zoom-out">
                     <div className='bg-poject bg-poject2'>
                         <div className='bg'>
                             <div className='overlay'></div>

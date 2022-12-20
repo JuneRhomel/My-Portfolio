@@ -6,6 +6,7 @@ export default function Navbar() {
         document.getElementById("bar-btn1").classList.toggle("barRotate1")
         document.getElementById("bar-btn2").classList.toggle("barRotate2")
         document.querySelector(".menu").classList.toggle("active-menu")
+        document.querySelector("body").classList.toggle("body-hidden")
     }
 
 
@@ -26,11 +27,11 @@ export default function Navbar() {
                     </ul>
                     <button className="btn-resume">Resume</button>
                 </div>
-                    <button className="menu-btn" onClick={navBTn} id="menu-btn">
+                    <div className="menu-btn" onClick={navBTn} id="menu-btn">
                         <div className="bar " id="bar-btn1"></div>
                         <div className="bar"></div>
                         <div className="bar " id="bar-btn2"></div>
-                    </button>
+                    </div>
                         
                 </nav>
 

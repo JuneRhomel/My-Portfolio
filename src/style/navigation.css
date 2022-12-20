@@ -10,6 +10,7 @@
     padding: 1em 0;
 }
 header {
+    
     position: relative;
     overflow-x: clip;
 }
@@ -19,15 +20,16 @@ header {
     font-size: 18px;
 }
 .btn-resume {
-    width: 141px;
+    width: 201px;
     font-size: 16px;
     font-weight: 700;
-    height: 33px;
+    height: 53px;
 }
 .menu-btn {
-    float: right;
     border: none;
-    position: relative;
+    position: absolute;
+    right: 30px;
+    z-index: 9;
 }
 
 .bar {
@@ -62,7 +64,7 @@ header {
 .menu {
     transform: translateX(100%);
     transition: .3s ease-in-out;
-    width: 80%;
+    width: min(75vw, 400px);
     height: 100vh;
     position: absolute;
     right: 0;
@@ -72,6 +74,8 @@ header {
     background-color: #333333;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    z-index: 2;
 }
 .active-menu{
     transform: translateX(0);

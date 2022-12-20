@@ -2,7 +2,7 @@ import React from 'react'
 import "../style/contact.css"
 export default function Contact() {
     return (
-        <section className='contact-section'>
+        <section className='contact-section'  data-aos="fade-up">
             <div className="container">
                 <div className='contact-container'>
                     <i className='tag'><span>05.</span> What’s Next?</i>
