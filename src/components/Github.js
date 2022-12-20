@@ -1,7 +1,7 @@
 import { getAllByAltText } from '@testing-library/react';
 import React, { useState, useEffect } from 'react';
 
-const token = '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';
+const token = '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';
 
 function Github() {
     const [repos, setRepos] = useState([]);
@@ -32,7 +32,6 @@ function Github() {
         }
     })}
 
-    console.log(loadMore)
 
 
     const [languages, setLanguages] = useState({})
@@ -46,7 +45,6 @@ function Github() {
     }, [])
 
     let languagesList =  Object.keys(languages)
-    // console.log(languagesList)
     return (
         <div className='box-list' >
             {
