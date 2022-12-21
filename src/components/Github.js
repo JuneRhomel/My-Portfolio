@@ -1,7 +1,7 @@
-import { getAllByAltText } from '@testing-library/react';
 import React, { useState, useEffect } from 'react';
 
-const token = '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';
+import tokenKey from './token.json';
+const token = tokenKey.token;
 
 function Github() {
     const [repos, setRepos] = useState([]);
