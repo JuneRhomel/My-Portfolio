@@ -35,7 +35,7 @@ export default function project() {
                     </div>
 
                 </div>
-                <div>
+                <div data-aos="zoom-out">
                     <div className='box-project box-project2' >
                         <div className='bg-poject bg-poject2'>
                             <div className='bg'>

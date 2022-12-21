@@ -22,29 +22,19 @@ function Github() {
     const filteredRepos = repos.filter(repo =>
         repo.visibility == "public"
     );
-    const [loadMore, setloadMore] = useState(4)
+    const [loadMore, setloadMore] = useState(3)
 
     const load = ()=> {setloadMore(prevVal => {
         if (prevVal >= filteredRepos.length ) {
-            return prevVal = 4
+            return prevVal = 3
         } else { 
-            return prevVal + 4
+            return prevVal + 3
         }
     })}
 
+console.log(filteredRepos)
 
 
-    const [languages, setLanguages] = useState({})
-    useEffect(() => {
-    filteredRepos.map(lang=> {
-        fetch(lang.languages_url)
-        .then(response => response.json())
-        .then(languages =>  setLanguages(languages))
-        .catch(error => console.error(error))
-    })
-    }, [])
-
-    let languagesList =  Object.keys(languages)
     return (
         <div className='box-list' >
             {
@@ -52,16 +42,13 @@ function Github() {
                 <a data-aos="fade-up" href={repo.html_url} target="_blank" rel="noopener noreferrer" className='main-box-project' key={repo.id}>
                     <div className='link-project'>
                         <a class="fa-solid fa-folder-open"></a>
-                        <small>{repo.created_at.slice(0,10)}</small>
+                        <small>Last Updated At : {repo.pushed_at.slice(0,10)}</small>
                     </div>
                     <div>
                         <h4 key={repo.id}>{repo.name}</h4>
-                        <p>A static website that you can see all the trending Movie, Tv series, anime. Built with HTML, CSS Bootstrap </p>
+                       
                     </div>
-                    <div className='tools-used'>{    
-                    languagesList.map(e => { 
-                        return (<b>{e}</b>)
-                    })}
+                    <div className='tools-used'><b>{repo.language}</b>
                     </div>
                 </a>
             ))}

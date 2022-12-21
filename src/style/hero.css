@@ -46,6 +46,7 @@ h2 {
     font-size: 15px;
     line-height: 160.52%;
     margin-bottom: 29px;
+    color: var(--gray-color);
 }
 
 @media only screen and (min-width: 1000px) {
