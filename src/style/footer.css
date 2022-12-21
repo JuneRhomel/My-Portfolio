@@ -61,7 +61,7 @@ footer {
     font-size: 13px;
     font-weight: 300;
     bottom: 0;
-    right: 50px;
+    right: -16px;
 
 }
 .email-sticky a {
@@ -72,7 +72,7 @@ footer {
     margin-bottom: 10px;
 }
 
-@media only screen and (min-width:1554px) {
+@media only screen and (min-width: 954px) {
     .social-sticky {
         visibility: visible;
     }

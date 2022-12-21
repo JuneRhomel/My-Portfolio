@@ -1,11 +1,7 @@
 import { getAllByAltText } from '@testing-library/react';
 import React, { useState, useEffect } from 'react';
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
-// ..
-AOS.init();
 
-const token = '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';
+const token = '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';
 
 function Github() {
     const [repos, setRepos] = useState([]);
@@ -26,13 +22,13 @@ function Github() {
     const filteredRepos = repos.filter(repo =>
         repo.visibility == "public"
     );
-    const [loadMore, setloadMore] = useState(3)
+    const [loadMore, setloadMore] = useState(4)
 
     const load = ()=> {setloadMore(prevVal => {
         if (prevVal >= filteredRepos.length ) {
-            return prevVal = 3
+            return prevVal = 4
         } else { 
-            return prevVal + 3
+            return prevVal + 4
         }
     })}
 

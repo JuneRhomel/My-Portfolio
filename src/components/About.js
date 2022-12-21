@@ -22,7 +22,7 @@ export default function About() {
         <section className="about-section"  data-aos="fade-right">
 
             <div className="about">
-                <h3><span>01.</span>About Me <svg viewBox="0 0 308 1" fill="none">
+                <h3><span>01.</span>About Me  <svg viewBox="0 0 308 1" fill="none">
                     <line y1="0.65" x2="308" y2="0.65" stroke="#CCD6F6" stroke-width="0.7" />
                 </svg>
                 </h3>
