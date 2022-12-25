@@ -66,8 +66,8 @@ export default function Tools() {
 
     const listlogo = logo.map((item) => {
         return (
-            <div className='logo'>
-                <img src={item.imgLogo} alt="" />
+            <div className='logo'key={item.text}>
+                <img  src={item.imgLogo} alt="" />
                 <p>{item.text}</p>
             </div>
             )

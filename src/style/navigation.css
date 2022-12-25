@@ -3,6 +3,7 @@
     width: 90%;
     margin: auto;
 }
+
 .navigation {
     display: flex;
     justify-content: space-between;
@@ -10,9 +11,12 @@
     padding: 1em 0;
 }
 header {
-    
-    position: relative;
+    width: 100%;
+    position: fixed;
+    top: 0;
     overflow-x: clip;
+    z-index: 99999;
+    transition: .3s ease-in-out;
 }
 
 .manu-nav li a {

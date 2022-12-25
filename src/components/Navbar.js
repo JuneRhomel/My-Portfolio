@@ -8,22 +8,29 @@ export default function Navbar() {
         document.querySelector(".menu").classList.toggle("active-menu")
         document.querySelector("body").classList.toggle("body-hidden")
     }
-
+    window.addEventListener("scroll", ()=> {
+        if(window.scrollY >= 46) {
+            document.querySelector("header").style.backgroundColor =  "#333333A4";
+            document.querySelector("header").style.boxShadow= " -1px 2px 15px -5px rgba(0,0,0,0.75);"
+        } else {    
+            document.querySelector("header").style.backgroundColor =  "transparent";
+        }
+    })
 
 
     return (
         <header >
             <div className="container-nav">
                 <nav className="navigation">
-                    <a>
+                    <a href="#">
                         <img src={Logo} alt="J.R LOGO" />
                     </a>
                 <div className="menu">
                     <ul className="manu-nav">
-                        <li><a href=""><span className="number">01.</span>About</a></li>
-                        <li><a href=""><span className="number">02.</span>Skills</a></li>
-                        <li><a href=""><span className="number">03.</span>Projects</a></li>
-                        <li><a href=""><span className="number">04.</span>Contact</a></li>
+                        <li><a href="#About"><span className="number">01.</span>About</a></li>
+                        <li><a href="#Skills"><span className="number">02.</span>Skills</a></li>
+                        <li><a href="#Projects"><span className="number">03.</span>Projects</a></li>
+                        <li><a href="#Contact"><span className="number">04.</span>Contact</a></li>
                     </ul>
                     <button className="btn-resume">Resume</button>
                 </div>

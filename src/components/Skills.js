@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Skills() {
     return (
-        <section className='skills' data-aos="fade-left">
+        <section className='skills' data-aos="fade-left" id='Skills'>
             <div className="about">
                 <h3><span>02.</span>Skills <svg viewBox="0 0 308 1" fill="none">
                     <line y1="0.65" x2="308" y2="0.65" stroke="#CCD6F6" stroke-width="0.7" />

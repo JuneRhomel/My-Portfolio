@@ -5,7 +5,7 @@ import "../style/projects.css"
 
 export default function project() {
     return (
-        <section className='main-project'>
+        <section className='main-project' id='Projects'>
 
             <div className="container">
                 <h3 className='project-h3'><span>04.</span>Some Things I’ve Built</h3>
