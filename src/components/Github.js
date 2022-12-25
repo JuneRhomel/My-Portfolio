@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import tokenKey from './token.json';
+import tokenKey from '../../token.json';
 const token = tokenKey.token;
 
 function Github() {
