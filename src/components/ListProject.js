@@ -5,7 +5,7 @@ import "../style/listProject.css"
 
 export default function ListProject() {
     return (
-        <section className='list-project'>
+        <section className='list-project' id='List'>
             <div className="container">
                 <i className='tag'>Featured Project</i>
                 <h2>My GitHub Repositories</h2>

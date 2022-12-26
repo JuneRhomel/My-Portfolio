@@ -21,7 +21,7 @@ export default function project() {
                             <i className='tag'>Featured Project</i>
                             <h2>EduCadamy</h2>
                             <div className='p-box'>
-                                <p>A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and .</p>
+                                <p>An educational website is a web platform that provides educational content, resources, and tools to users, typically with the goal of facilitating learning and knowledge acquisition. </p>
                             </div>
                             <div className='list-tools-used'>
                                 <b>Vs Code</b> <b>HTML</b> <b>Bootstrap</b>

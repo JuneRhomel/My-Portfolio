@@ -1,6 +1,6 @@
 import Logo from "../assets/Group 8.svg"
 import "../style/navigation.css"
-
+import file from "./file/June-Rhomel-Mandigma-Front-End-Web-Developer-resume.pdf"
 export default function Navbar() {
     const navBTn = ()=> {
         document.getElementById("bar-btn1").classList.toggle("barRotate1")
@@ -32,7 +32,7 @@ export default function Navbar() {
                         <li><a href="#Projects"><span className="number">03.</span>Projects</a></li>
                         <li><a href="#Contact"><span className="number">04.</span>Contact</a></li>
                     </ul>
-                    <button className="btn-resume">Resume</button>
+                    <a href={file} download="June-Rhomel-Mandigma-Front-End-Web-Developer-resume.pdf"><button className="btn-resume">Resume</button></a>
                 </div>
                     <div className="menu-btn" onClick={navBTn} id="menu-btn">
                         <div className="bar " id="bar-btn1"></div>
