@@ -34,7 +34,6 @@ function Github() {
         })
     }
 
-    console.log(filteredRepos)
 
 
     return (
