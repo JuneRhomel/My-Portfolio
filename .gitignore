@@ -23,3 +23,6 @@ yarn-debug.log*
 yarn-error.log*
 # token
 src/token.json
+/build
+/.firebase
+/firebase.json
