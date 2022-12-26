@@ -1,4 +1,4 @@
-import Logo from "../assets/Group 8.svg"
+import Logo from "../assets/logo.svg"
 import "../style/navigation.css"
 import file from "./file/June-Rhomel-Mandigma-Front-End-Web-Developer-resume.pdf"
 export default function Navbar() {
