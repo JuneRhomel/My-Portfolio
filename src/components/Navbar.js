@@ -32,7 +32,7 @@ export default function Navbar() {
                         <li><a href="#Projects"><span className="number">03.</span>Projects</a></li>
                         <li><a href="#Contact"><span className="number">04.</span>Contact</a></li>
                     </ul>
-                    <a href={file} download="June-Rhomel-Mandigma-Front-End-Web-Developer-resume.pdf"><button className="btn-resume">Resume</button></a>
+                    <a href={file} download="June Rhomel Mandigma Front End .pdf"><button className="btn-resume">Resume</button></a>
                 </div>
                     <div className="menu-btn" onClick={navBTn} id="menu-btn">
                         <div className="bar " id="bar-btn1"></div>
