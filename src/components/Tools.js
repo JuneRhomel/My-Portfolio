@@ -82,6 +82,12 @@ export default function Tools() {
             <div className='tools-logo'>
                 {listlogo}
             </div>
+
+
+            <div className="bg-txt">
+                <h1 className="h1-bg bg-2 ">Back-End</h1>
+                <h1 className="h1-bg">Developer</h1>
+            </div>
         </div>
     )
 }

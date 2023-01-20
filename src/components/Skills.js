@@ -37,6 +37,10 @@ export default function Skills() {
                     </ul>
                 </div>
             </div>
+            <div className='bg-skills-txt'>
+                    <h1 className='h1-bg bg-2  '>Front-End</h1>
+                    <h1 className='h1-bg '>Developer</h1>
+            </div>
         </section>
     )
 }

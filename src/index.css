@@ -87,7 +87,6 @@ h4 {
 .container {
   width: 90%;
   margin: auto;
-  overflow: hidden;
 }
 ul,li,a {
   list-style: none;
@@ -117,3 +116,42 @@ a:hover {
   }
 }
 
+.h1-bg {
+  font-size: 140px !important;
+  color: rgba(37, 37, 37, 0.48);
+}
+.bg-txt {
+  position: absolute;
+  right: -250px;
+  top: 10%;
+}
+.bg-2 {
+  margin-left: -1em;
+  color: rgba(80, 80, 80, 0.48);
+
+}
+.about-section {
+  position: relative;
+}
+.skills {
+  position: relative;
+}
+.bg-skills-txt {
+  position: absolute;
+  top: 20%;
+  right: 120%;
+}
+.skills .bg-2 {
+  margin-left: -1em;
+}
+.logo-box {
+  position: relative;
+}
+.logo-box .bg-txt {
+  right: -220%;
+}
+@media only screen and (max-width: 1500px) {
+  .bg-skills-txt,.bg-txt {
+    display: none;
+  }
+}
