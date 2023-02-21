@@ -67,3 +67,8 @@
     font-weight: 700;
     font-size: 1em;
 }
+.flex-project {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}

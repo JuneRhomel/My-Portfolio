@@ -1,5 +1,4 @@
 import React, { useRef, useState } from 'react'
-import test from "../assets/hero.png"
 
 export default function Add() {
     const [ShowForm, SetShowForm] = useState(false);
@@ -16,13 +15,13 @@ export default function Add() {
         setTools([...Tools,Newtool ])
     }
     const delBtn = (i) => {
-        const remove =  Tools.filter((item) => i != item.id )
+        const remove =  Tools.filter((item) => i !== item.id )
         setTools(remove)
     }
     const [view,SetView] =useState(null)
 
     const ViewHandel = (e) => {
-        if(e.target.files["0"].type == "image/jpeg") {
+        if(e.target.files["0"].type === "image/jpeg") {
             SetView(e.target.files["0"])
         }
     }
