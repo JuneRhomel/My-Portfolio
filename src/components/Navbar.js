@@ -1,6 +1,6 @@
 import Logo from "../assets/logo.svg"
 import "../style/navigation.css"
-import file from "./file/June Rhomel Mandigma Front End .pdf"
+import file from "./file/June Rhomel Resume.pdf"
 export default function Navbar() {
     const navBTn = ()=> {
         document.getElementById("bar-btn1").classList.toggle("barRotate1")
