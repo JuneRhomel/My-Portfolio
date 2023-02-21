@@ -155,3 +155,92 @@ a:hover {
     display: none;
   }
 }
+
+.add-btn {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+  background-color: #08fdd818 !important;
+}
+.bg-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  padding: 1em;
+  top: 0;
+background: rgba(3, 138, 104, 0.144);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+}
+.bg-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  background-color: var(--bgcolor);
+  padding: 1.2em;
+  max-width: 35em;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--primary-color);
+}
+.bg-form form input {
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  outline: none;
+  background-color: #e2f5f2;
+  border: none;
+  padding: 5px ;
+}
+.bg-form form .file {
+  width: auto;
+  background: none !important;
+  height: auto;
+}
+.bg-form form label {
+  color: var(--primary-color);
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+.bg-form form .submit {
+  width: 150px;
+  height: 35px;
+}
+.bg-form form .tools .list-tools  {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.bg-form form .tools .list-tools b {
+  background-color: #08fdd844;
+  border: 1px solid var(--primary-color);
+  color: var(--h-color);
+  padding: 0 9px ;
+  height: 30px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+.tools-btn {
+  display: flex;
+  justify-content: space-between;
+}
+.tools-btn input {
+  width: 83% !important;
+}
+.tools-btn button {
+  width: 15%;
+  height: 35px;
+}

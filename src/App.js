@@ -10,6 +10,7 @@ import ListProject from './components/ListProject';
 import Contact from "./components/Contact"
 import Footer from './components/Footer';
 import Sticky from './components/Sticky';
+import Add from './components/Add';
 function App() {
   return (
     <div>
@@ -25,6 +26,7 @@ function App() {
       <Contact/>
       <Footer />
       <Sticky />
+      <Add/>
     </div>
   );
 }
