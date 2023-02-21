@@ -32,6 +32,7 @@ button {
   background-color: transparent;
   position: relative;
   transition: .3s ease-in-out;
+  position: relative;
   
 }
 button::before {
@@ -164,6 +165,7 @@ a:hover {
   height: 60px;
   font-size: 20px;
   background-color: #08fdd818 !important;
+  z-index: 7;
 }
 .bg-form {
   display: flex;
@@ -185,9 +187,10 @@ backdrop-filter: blur(5px);
   justify-content: center;
   gap: 15px;
   background-color: var(--bgcolor);
-  padding: 1.2em;
+  padding: 2.2em 1.2em;
   max-width: 35em;
   width: 100%;
+  max-height: 55em;
   border-radius: 10px;
   border: 1px solid var(--primary-color);
 }
@@ -196,10 +199,21 @@ backdrop-filter: blur(5px);
   height: 35px;
   border-radius: 5px;
   outline: none;
-  background-color: #e2f5f2;
+  background-color: #effcfa;
   border: none;
   padding: 5px ;
 }
+.bg-form form textarea {
+  width: 100%;
+  height: 150px;
+  resize: none;
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: #effcfa;
+}
+
 .bg-form form .file {
   width: auto;
   background: none !important;
@@ -222,6 +236,7 @@ backdrop-filter: blur(5px);
   margin-bottom: 10px;
 }
 .bg-form form .tools .list-tools b {
+  cursor: pointer;
   background-color: #08fdd844;
   border: 1px solid var(--primary-color);
   color: var(--h-color);
@@ -233,6 +248,9 @@ backdrop-filter: blur(5px);
   justify-content: center;
   font-size: 14px;
 }
+.bg-form form .tools .list-tools b:hover {
+  background-color: rgba(255, 0, 0, 0.164);
+}
 .tools-btn {
   display: flex;
   justify-content: space-between;
@@ -243,4 +261,23 @@ backdrop-filter: blur(5px);
 .tools-btn button {
   width: 15%;
   height: 35px;
+}
+.tools-btn button:hover,.submit:hover {
+  background-color: #00eeca3b !important;
+}
+.image-file {
+  display: flex;
+  justify-content: space-between;
+
+}
+.image-file .main-img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image-file img {
+  width: 100%;
+  height: 85px;
+  object-fit: contain;
 }
