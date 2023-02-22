@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import tokenKey from '../assets/token.json';
+import tokenKey from '../token.json';
 const token = tokenKey.token;
 
 function Github() {
@@ -18,7 +18,7 @@ function Github() {
 
         getRepos();
     }, []);
-
+    
     const filteredRepos = repos.filter(repo =>
         repo.visibility == "public"
     );

@@ -238,6 +238,12 @@ backdrop-filter: blur(5px);
   margin-bottom: 10px;
 }
 .bg-form form .tools .list-tools b {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; 
   cursor: pointer;
   background-color: #08fdd844;
   border: 1px solid var(--primary-color);

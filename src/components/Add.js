@@ -7,12 +7,15 @@ export default function Add() {
 
     
     const handelAdd = () => {
-        const Newtool = {
-            id : Tools.length +1,
-            tool : ToolsRef.current.value
-        } 
-        ToolsRef.current.value = ''
-        setTools([...Tools,Newtool ])
+        if(ToolsRef.current.value) {
+            const Newtool = {
+                id : Tools.length +1,
+                tool : ToolsRef.current.value
+            } 
+            ToolsRef.current.value = ''
+            setTools([...Tools,Newtool ])
+        }
+        
     }
     const delBtn = (i) => {
         const remove =  Tools.filter((item) => i !== item.id )
@@ -28,6 +31,7 @@ export default function Add() {
 
     const handelSubmit = (e) => {
         e.preventDefault();
+        alert("sdasd")
     }
     
     return (
@@ -81,7 +85,7 @@ export default function Add() {
                             </div>
                             <div className='tools-btn'>
                                 <input ref={ToolsRef} type="text" />
-                                <button onClick={handelAdd}>Add</button>
+                                <button type='button' onClick={handelAdd}>Add</button>
                             </div>
 
                         </div>

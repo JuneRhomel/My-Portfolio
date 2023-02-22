@@ -38,8 +38,8 @@ export default function project() {
 
                 </div>
                 <div data-aos="zoom-out">
-                    <div className='box-project box-project2' >
-                        <div className='bg-poject bg-poject2'>
+                    <div className='box-project ' >
+                        <div className='bg-poject'>
                             <div className='bg'>
                                 <div className='overlay'></div>
                                 <img src={Project2} alt="" />
@@ -88,6 +88,7 @@ export default function project() {
                     </div>
 
                 </div>
+                
                 </div>
             </div>
         </section>
