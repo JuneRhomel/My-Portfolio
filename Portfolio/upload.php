@@ -7,6 +7,14 @@ if (!empty($_POST)) {
     $Description = $_POST["Description"];
     $Github = $_POST["Github"];
     $Link = $_POST["Link"];
+    $Tools = $_POST["Tools"];
+    $data_array = json_decode($Tools, true);
+
+    $list_tools = '';
+    foreach ($data_array as $item) {
+        $list_tools .= $item["tool"].",";
+    }
+
 
     if ($_FILES && $_FILES['Image']) {
         $file = $_FILES['Image'];
@@ -26,26 +34,15 @@ if (!empty($_POST)) {
             $fileNameNew = uniqid('',true).".". $fileActualExt;
             $fileDestination = 'uploads/'.$fileNameNew;
             move_uploaded_file($fileTmpName,$fileDestination);
-            echo"Sucsess";
-        } else {
-            echo "Image Not Compatible";
-        }
-
-        print_r($fileDestination) ;
-      } else {
-        echo "No";
-      }
-
+        } 
+    } 
 
 
     
-    $sql = "INSERT INTO `tblproject`(`Title`, `Description`, `Github`, `Link`,`Image`) VALUES ('$Title','$Description','$Github','$Link','$fileDestination')";
+    $sql = "INSERT INTO `tblproject`(`Title`, `Description`, `Github`, `Link`,`Image`,`Tools`) VALUES ('$Title','$Description','$Github','$Link','$fileDestination','$list_tools')";
     
     if ($conn->query($sql) === TRUE) {
-        echo "New record created successfully";
     } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
     }
-} else {
-    echo print_r($_POST);
-}
+} 

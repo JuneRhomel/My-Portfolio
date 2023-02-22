@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react'
 
+
 export default function Add() {
     const [ShowForm, SetShowForm] = useState(false);
     const [Tools, setTools] = useState([])
@@ -16,7 +17,7 @@ export default function Add() {
 
     const handelAdd = () => {
         if (ToolsRef.current.value) {
-            const Newtool = {
+            const Newtool = {   
                 id: Tools.length + 1,
                 tool: ToolsRef.current.value
             }
@@ -29,7 +30,7 @@ export default function Add() {
         const remove = Tools.filter((item) => i !== item.id)
         setTools(remove)
     }
-
+    // fix the image type
     const ViewHandel = (e) => {
         if (e.target.files["0"].type === "image/jpeg") {
             SetView(e.target.files["0"])
@@ -44,6 +45,7 @@ export default function Add() {
         data.append("Description", descriptionRef.current.value)
         data.append("Github", githubRef.current.value)
         data.append("Link", linkRef.current.value)
+        data.append("Tools", JSON.stringify(Tools) )
         
         fetch('http://localhost:3000/upload.php', {
             method: 'POST',
@@ -66,12 +68,12 @@ export default function Add() {
                     <form onSubmit={handelSubmit}>
                         <div>
                             <label htmlFor="">Project Name</label>
-                            <input ref={ProjectRef} type="text" />
+                            <input ref={ProjectRef} type="text" required />
                         </div>
                         <div className='image-file'>
                             <div>
-                                <label htmlFor="">Image</label>
-                                <input className='file' type="file" onChange={ViewHandel} />
+                                <label htmlFor="" required>Image</label>
+                                <input className='file' type="file" onChange={ViewHandel} required/>
                             </div>
                             <div className='main-img'>
                                 {view ?
@@ -84,15 +86,15 @@ export default function Add() {
                         </div>
                         <div>
                             <label htmlFor="">Description</label>
-                            <textarea ref={descriptionRef} name="Description"></textarea>
+                            <textarea ref={descriptionRef} name="Description" required></textarea>
                         </div>
                         <div>
                             <label htmlFor="">Github</label>
-                            <input ref={githubRef} type="text" />
+                            <input ref={githubRef} type="text" required />
                         </div>
                         <div>
                             <label htmlFor="">Link</label>
-                            <input ref={linkRef} type="text" />
+                            <input ref={linkRef} type="text" required />
                         </div>
                         <div className='tools'>
                             <label htmlFor="">Tools</label>
@@ -107,7 +109,7 @@ export default function Add() {
 
                             </div>
                             <div className='tools-btn'>
-                                <input ref={ToolsRef} type="text" />
+                                <input ref={ToolsRef} type="text"  />
                                 <button type='button' onClick={handelAdd}>Add</button>
                             </div>
 
