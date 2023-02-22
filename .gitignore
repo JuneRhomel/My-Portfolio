@@ -22,7 +22,8 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 # token
-src/token.json
+/src/token.json
+
 /build
 /.firebase
 /firebase.json

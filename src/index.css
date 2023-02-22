@@ -32,6 +32,7 @@ button {
   background-color: transparent;
   position: relative;
   transition: .3s ease-in-out;
+  position: relative;
   
 }
 button::before {
@@ -86,6 +87,7 @@ h4 {
 }
 .container {
   width: 90%;
+  overflow: hidden;
   margin: auto;
 }
 ul,li,a {
@@ -154,4 +156,139 @@ a:hover {
   .bg-skills-txt,.bg-txt {
     display: none;
   }
+}
+
+.add-btn {
+  z-index: 10;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+  background-color: #08fdd818 !important;
+}
+.bg-form {
+  z-index: 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  padding: 1em;
+  top: 0;
+background: rgba(3, 138, 104, 0.144);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+}
+.bg-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  background-color: var(--bgcolor);
+  padding: 2.2em 1.2em;
+  max-width: 35em;
+  width: 100%;
+  max-height: 55em;
+  border-radius: 10px;
+  border: 1px solid var(--primary-color);
+}
+.bg-form form input {
+  width: 100%;
+  height: 35px;
+  border-radius: 5px;
+  outline: none;
+  background-color: #effcfa;
+  border: none;
+  padding: 5px ;
+}
+.bg-form form textarea {
+  width: 100%;
+  height:80px;
+  resize: none;
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: #effcfa;
+}
+
+.bg-form form .file {
+  width: auto;
+  background: none !important;
+  height: auto;
+}
+.bg-form form label {
+  color: var(--primary-color);
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+.bg-form form .submit {
+  width: 150px;
+  height: 35px;
+}
+.bg-form form .tools .list-tools  {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.bg-form form .tools .list-tools b {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+     -moz-user-select: none; /* Old versions of Firefox */
+      -ms-user-select: none; /* Internet Explorer/Edge */
+          user-select: none; 
+  cursor: pointer;
+  background-color: #08fdd844;
+  border: 1px solid var(--primary-color);
+  color: var(--h-color);
+  padding: 0 9px ;
+  height: 30px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+.bg-form form .tools .list-tools b:hover {
+  background-color: rgba(255, 0, 0, 0.164);
+}
+.tools-btn {
+  display: flex;
+  justify-content: space-between;
+}
+.tools-btn input {
+  width: 83% !important;
+}
+.tools-btn button {
+  width: 15%;
+  height: 35px;
+}
+.tools-btn button:hover,.submit:hover {
+  background-color: #00eeca3b !important;
+}
+.image-file {
+  display: flex;
+  justify-content: space-between;
+
+}
+.image-file .main-img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image-file img {
+  width: 100%;
+  height: 85px;
+  object-fit: contain;
+}
+.submit-div {
+  text-align: end;
 }

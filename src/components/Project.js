@@ -10,7 +10,7 @@ export default function project() {
 
             <div className="container">
                 <h3 className='project-h3'><span>04.</span>Some Things I’ve Built</h3>
-
+            <div className='flex-project'>
                 <div data-aos="zoom-out">
                     <div className='box-project'  >
                         <div className='bg-poject'>
@@ -38,8 +38,8 @@ export default function project() {
 
                 </div>
                 <div data-aos="zoom-out">
-                    <div className='box-project box-project2' >
-                        <div className='bg-poject bg-poject2'>
+                    <div className='box-project ' >
+                        <div className='bg-poject'>
                             <div className='bg'>
                                 <div className='overlay'></div>
                                 <img src={Project2} alt="" />
@@ -88,7 +88,8 @@ export default function project() {
                     </div>
 
                 </div>
-
+                
+                </div>
             </div>
         </section>
     )
