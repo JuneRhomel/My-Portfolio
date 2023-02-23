@@ -292,3 +292,7 @@ backdrop-filter: blur(5px);
 .submit-div {
   text-align: end;
 }
+.imgError {
+  color: red;
+  font-size: 13px;
+}

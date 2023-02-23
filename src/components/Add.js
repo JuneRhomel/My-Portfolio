@@ -31,9 +31,13 @@ export default function Add() {
         setTools(remove)
     }
     // fix the image type
+    const [errorFile,SetErrorFile]= useState(false)
     const ViewHandel = (e) => {
-        if (e.target.files["0"].type === "image/jpeg") {
+        if (e.target.files["0"].type === "image/jpeg" || e.target.files["0"].type === "image/png") {
             SetView(e.target.files["0"])
+            SetErrorFile(false)
+        } else{
+            SetErrorFile(true)
         }
     }
 
@@ -74,7 +78,9 @@ export default function Add() {
                             <div>
                                 <label htmlFor="" required>Image</label>
                                 <input className='file' type="file" onChange={ViewHandel} required/>
+                                <i className='imgError'>{errorFile?"!! Image Is not Compatiblae":""}</i>
                             </div>
+                            
                             <div className='main-img'>
                                 {view ?
                                     <img src={URL.createObjectURL(view)} alt="" />
@@ -83,6 +89,7 @@ export default function Add() {
                                 }
 
                             </div>
+                            
                         </div>
                         <div>
                             <label htmlFor="">Description</label>
