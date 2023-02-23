@@ -56,10 +56,11 @@ export default function Add() {
             body: data
         })
         .then(response => {
-            console.log('Success:', response);
+            alert("Project Upload", response)
+            SetShowForm(false)
         })
         .catch(error => {
-            console.error('Error:', error);
+            alert('Error:', error);
         });
     }
 

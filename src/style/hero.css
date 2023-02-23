@@ -11,13 +11,14 @@ h2 {
     color: var(--h-color);
     letter-spacing: 3px;
 }
-.tag {
+
+.hero-text .tag {
     font-family: 'Yeseva One';
     font-size: 15px;
     color: var(--h-color);
+    text-align: start;
     
 }
-
 .hero {
     display: flex;
     align-items: center;

@@ -73,21 +73,19 @@ export default function Tools() {
             )
     })
     return (
+        <section className='logos-tools-sectoion' id='Skills'>
+    <div className='container'>
         <div className='logo-box'data-aos="fade-right">
-            <h3><span>02.</span>Tools I Used <svg viewBox="0 0 308 1" fill="none">
-                    <line y1="0.65" x2="308" y2="0.65" stroke="#CCD6F6" stroke-width="0.7" />
-                </svg>
-            </h3>
+            <h3><span>02.</span>Tools I Used </h3>
             <p>Here are a few technologies I’ve been working with recently:</p>
+
+
             <div className='tools-logo'>
                 {listlogo}
             </div>
 
-
-            <div className="bg-txt">
-                <h1 className="h1-bg bg-2 ">Back-End</h1>
-                <h1 className="h1-bg">Developer</h1>
-            </div>
         </div>
+        </div>
+        </section>
     )
 }

@@ -25,6 +25,11 @@ body {
   --proj-bg: #333333f3;
   --projPC-bg: #333333;
 }
+.tag {
+  color: var(--primary-color);
+  font-family: 'Yeseva One';
+  font-size: 15px;
+}
 button {
   border: 1px solid var(--primary-color);
   color: var(--primary-color);
@@ -66,6 +71,7 @@ h3 {
   color: var(--h-color);
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
   font-size: 25px;
   margin-bottom: 38px;
