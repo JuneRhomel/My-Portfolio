@@ -78,8 +78,6 @@ export default function Tools() {
         <div className='logo-box'data-aos="fade-right">
             <h3><span>02.</span>Tools I Used </h3>
             <p>Here are a few technologies I’ve been working with recently:</p>
-
-
             <div className='tools-logo'>
                 {listlogo}
             </div>

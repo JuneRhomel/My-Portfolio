@@ -19,7 +19,6 @@ function App() {
       <Hero />
       <div className="container about-skills">
         <About />
-       
       </div>
       <Project />
       <Allproject/>
