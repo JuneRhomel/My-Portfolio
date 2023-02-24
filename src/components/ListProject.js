@@ -3,7 +3,8 @@ import Github from "./Github"
 import "../style/listProject.css"
 
 
-export default function ListProject() {
+export default function ListProject({data}) {
+    
     return (
         <section className='list-project' id='List'>
             <div className="container">
@@ -11,7 +12,7 @@ export default function ListProject() {
                 <h2>My GitHub Repositories</h2>
 
                 <div className='box-list'>
-                    <Github />
+                    <Github data={data} />
                 </div>
             </div>
         

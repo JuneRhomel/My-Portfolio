@@ -11,8 +11,13 @@ import Sticky from './components/Sticky';
 import Add from './components/Add';
 import Allproject from './components/Allproject';
 import Tools from './components/Tools';
+import GithubContextApi from './Context/GithubContext';
+import { useContext } from 'react';
 
 function App() {
+
+  const data = useContext(GithubContextApi);
+  console.log(data)
   return (
     <div>
       <Navbar />
@@ -23,7 +28,7 @@ function App() {
       <Project />
       <Allproject/>
       <Tools/>
-      <ListProject />
+      <ListProject/>
       <Contact/>
       <Footer />
       <Sticky />
