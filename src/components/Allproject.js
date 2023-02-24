@@ -1,7 +1,17 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "../style/Allproject.css"
 import ProjectList from './ProjectList'
 export default function Allproject() {
+  const [project, setProject] = useState([]);
+  useEffect(() => {
+      async function getRepos() {
+          const response = await fetch('http://localhost:3000/API.php');
+          const repos = await response.json();
+          setProject(repos);
+      }
+
+      getRepos();
+  }, []);
   return (
     <section className='ProjectAll' id='ProjectAll'>
     <div className="container">
@@ -13,12 +23,11 @@ export default function Allproject() {
         <div className='blur blur1'></div>
         <div className='blur blur2'></div>
         <div className='project-list'>
-            <ProjectList/>
-            <ProjectList/>
-            <ProjectList/>
-            <ProjectList/>
-            <ProjectList/>
-            <ProjectList/>
+          {project.map(item => {
+            return (
+                <ProjectList {...item} key={item.PID}/>
+            )
+          })}
             
         </div>
         </div>
