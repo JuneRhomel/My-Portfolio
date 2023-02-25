@@ -2,7 +2,6 @@ import React from 'react'
 import imge from "../assets/project2.png"
 
 export default function ProjectList(props) {
-        console.log(props.Tools)
     
     return (
         <div className='project-items'>

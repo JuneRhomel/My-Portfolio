@@ -9,30 +9,37 @@ export default function Allproject() {
           const repos = await response.json();
           setProject(repos);
       }
-
       getRepos();
   }, []);
+  // alert(project.length)
   return (
-    <section className='ProjectAll' id='ProjectAll'>
-    <div className="container">
-        <i className='tag'>Featured Project</i>
-        <h2>My Projects</h2>
+    <>
+    {project.length >= 5?
+      <section className='ProjectAll' id='ProjectAll'>
+      <div className="container">
+          <i className='tag'>Featured Project</i>
+          <h2>My Projects</h2>
+  
+          <div className='main-project'>
+  
+          <div className='blur blur1'></div>
+          <div className='blur blur2'></div>
+          <div className='project-list'>
+            {project.map(item => {
+              return (
+                  <ProjectList {...item} key={item.PID}/>
+              )
+            })}
+              
+          </div>
+          </div>
+      </div>
+  
+  </section>
+  :
+  ""
+    }
+    </>
 
-        <div className='main-project'>
-
-        <div className='blur blur1'></div>
-        <div className='blur blur2'></div>
-        <div className='project-list'>
-          {project.map(item => {
-            return (
-                <ProjectList {...item} key={item.PID}/>
-            )
-          })}
-            
-        </div>
-        </div>
-    </div>
-
-</section>
   )
 }
