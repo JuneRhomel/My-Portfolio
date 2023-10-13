@@ -1,4 +1,3 @@
-
 .container-nav {
     width: 90%;
     margin: auto;
@@ -10,6 +9,7 @@
     align-items: center;
     padding: 1em 0;
 }
+
 header {
     width: 100%;
     position: fixed;
@@ -20,15 +20,17 @@ header {
 }
 
 .manu-nav li a {
-    font-family: 'Roboto',sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
 }
+
 .btn-resume {
     width: 201px;
     font-size: 16px;
     font-weight: 700;
     height: 53px;
 }
+
 .menu-btn {
     border: none;
     position: absolute;
@@ -43,6 +45,7 @@ header {
     background-color: var(--primary-color);
     transition: .4s ease-in-out;
 }
+
 .barRotate1 {
     position: absolute;
     transform: rotate(40deg);
@@ -52,6 +55,7 @@ header {
     transition: .4s ease-in-out;
 
 }
+
 .barRotate2 {
     position: absolute;
     transform: rotate(-40deg);
@@ -81,19 +85,23 @@ header {
     overflow: hidden;
     z-index: 2;
 }
-.active-menu{
+
+.active-menu {
     transform: translateX(0);
 }
+
 .manu-nav {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
+
 .manu-nav li {
     width: 100%;
     text-align: center;
 }
+
 .manu-nav a {
     display: block;
     width: 100%;
@@ -105,34 +113,40 @@ header {
     .menu-btn {
         display: none;
     }
+
     .menu {
         transform: none;
         width: auto;
         height: auto;
         background: none;
-        position:unset;
+        position: unset;
         align-items: center;
         flex-direction: row;
         justify-content: normal;
         gap: 1em;
     }
+
     .manu-nav {
         flex-direction: row;
         gap: 40px;
     }
+
     .manu-nav {
         gap: 0;
         width: auto;
     }
+
     .manu-nav li {
         width: auto;
     }
+
     .manu-nav a {
         display: block;
         padding: 0 2em;
         width: auto;
         font-size: 13px !important;
     }
+
     .btn-resume {
         width: 131px;
         height: 45px;

@@ -11,11 +11,12 @@ h2 {
     color: var(--h-color);
     letter-spacing: 3px;
 }
+
 .tag {
     font-family: 'Yeseva One';
     font-size: 15px;
     color: var(--h-color);
-    
+
 }
 
 .hero {
@@ -26,15 +27,17 @@ h2 {
     min-height: 42em;
 }
 
-.btn-hero{
+.btn-hero {
     width: 250px;
     height: 60px;
-    font-weight: 700;    
+    font-weight: 700;
     font-size: 15px;
 }
+
 .img-box-hero img {
     display: none;
 }
+
 .hero-text {
     height: 100%;
     width: 100%;
@@ -42,6 +45,7 @@ h2 {
     justify-content: center;
     flex-direction: column;
 }
+
 .hero-text p {
     font-size: 15px;
     line-height: 160.52%;
@@ -54,29 +58,36 @@ h2 {
         margin-top: 5em;
         height: 100vh;
     }
+
     .img-box-hero img {
         display: block;
         width: auto;
         height: 100%;
         object-fit: cover;
     }
+
     .img-box-hero {
         height: 100%;
     }
-    .hero-text  {
+
+    .hero-text {
         max-width: 650px;
     }
+
     .hero {
         justify-content: space-between;
     }
+
     h1 {
         margin-left: 20px;
         font-size: 60px !important;
     }
+
     h2 {
         margin-left: 20px;
         font-size: 50px !important;
     }
+
     .hero-text p {
         margin-left: 20px;
     }

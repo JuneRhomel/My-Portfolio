@@ -5,7 +5,7 @@ export default function Skills() {
         <section className='skills' data-aos="fade-left" id='Skills'>
             <div className="about">
                 <h3><span>02.</span>Skills <svg viewBox="0 0 308 1" fill="none">
-                    <line y1="0.65" x2="308" y2="0.65" stroke="#CCD6F6" stroke-width="0.7" />
+                    <line y1="0.65" x2="308" y2="0.65" stroke="#CCD6F6" strokeWidth="0.7" />
                 </svg>
                 </h3>
                 <div className='skills-box'>

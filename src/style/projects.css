@@ -5,9 +5,11 @@
     position: relative;
     overflow: hidden;
 }
+
 .main-project {
     margin-top: 4em;
 }
+
 .project-h3 {
     justify-content: center;
     margin-bottom: 4em;
@@ -54,8 +56,9 @@
     width: 100%;
     position: absolute;
     z-index: -1;
-    
+
 }
+
 .bg {
     height: 100%;
     width: 100%;
@@ -77,6 +80,7 @@
         margin: auto;
         overflow: visible;
     }
+
     .overlay {
         position: absolute;
         height: 100%;
@@ -84,20 +88,27 @@
         background: rgba(0, 95, 81, 0.705);
         transition: .3s ease-in-out;
     }
+
     .box-project:hover .overlay {
         background: rgba(0, 95, 81, 0);
     }
+
     .bg-poject {
         max-width: 637px;
         height: 24em;
     }
-    .box-project h2 , .box-project i , .box-project p {
+
+    .box-project h2,
+    .box-project i,
+    .box-project p {
         display: block;
         text-align: end;
     }
+
     .text-project {
         position: relative;
     }
+
     .p-box {
         background-color: var(--projPC-bg);
         border-radius: 5px;
@@ -106,37 +117,47 @@
         padding: 1em;
         margin-left: auto;
     }
+
     .list-tools-used {
         margin-left: auto;
         max-width: 374px;
     }
+
     .flex-project div:nth-child(even) .box-project .bg-poject {
         right: 0 !important;
         left: auto !important;
     }
 
-    .flex-project div:nth-child(even) .text-project  h2{
+    .flex-project div:nth-child(even) .text-project h2 {
         text-align: start !important;
     }
+
     .flex-project div:nth-child(even) .text-project .tag {
         text-align: start !important;
     }
-    .flex-project div:nth-child(even) .text-project .p-box, p {
+
+    .flex-project div:nth-child(even) .text-project .p-box,
+    p {
         margin: 0;
     }
+
     .flex-project div:nth-child(even) .text-project .p-box p {
         text-align: start;
     }
+
     .flex-project div:nth-child(even) .text-project .list-tools-used {
         margin-left: 0;
         justify-content: start;
     }
+
     .flex-project div.text-project .btn-project {
-        justify-content: end ;
+        justify-content: end;
     }
+
     .flex-project div:nth-child(even) .text-project .btn-project {
         justify-content: start !important;
     }
+
     .flex-project div:nth-child(even) .box-project {
         margin-top: 4em;
         margin-bottom: 4em;

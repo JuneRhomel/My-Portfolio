@@ -1,15 +1,12 @@
 import React, { useState, useEffect } from 'react';
-
-import tokenKey from '../token.json';
-const token = tokenKey.token;
-
 function Github() {
     const [repos, setRepos] = useState([]);
+
     useEffect(() => {
         async function getRepos() {
             const response = await fetch('https://api.github.com/user/repos', {
                 headers: {
-                    Authorization: `Bearer ${token}`
+                    Authorization: `Bearer ${process.env.REACT_APP_GITHUB_KEY}`
                 }
             });
             const repos = await response.json();
@@ -18,7 +15,7 @@ function Github() {
 
         getRepos();
     }, []);
-    
+
     const filteredRepos = repos.filter(repo =>
         repo.visibility == "public"
     );
@@ -42,7 +39,9 @@ function Github() {
                 filteredRepos.slice(0, loadMore).map(repo => (
                     <a data-aos="fade-up" href={repo.html_url} target="_blank" rel="noopener noreferrer" className='main-box-project' key={repo.id}>
                         <div className='link-project'>
-                            <a class="fa-solid fa-folder-open"></a>
+                            <span>
+                                <a class="fa-solid fa-folder-open"></a>
+                            </span>
                             <small>Last Updated At : {repo.pushed_at.slice(0, 10)}</small>
                         </div>
                         <div>

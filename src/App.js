@@ -23,10 +23,10 @@ function App() {
       </div>
       <Project />
       <ListProject />
-      <Contact/>
+      <Contact />
       <Footer />
       <Sticky />
-      <Add/>
+      <Add />
     </div>
   );
 }

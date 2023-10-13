@@ -5,16 +5,19 @@ footer {
 .footer-container {
     text-align: center;
 }
+
 .footer-container h3 {
     font-size: 13px;
     display: block;
     text-align: center;
     margin: 7px 0;
 }
+
 .footer-container span {
-    font-family: 'Yeseva One',sans-serif;
+    font-family: 'Yeseva One', sans-serif;
 }
-.used  {
+
+.used {
     display: flex;
     justify-content: center;
     font-size: 13px;
@@ -22,6 +25,7 @@ footer {
     color: var(--gray-color);
     margin: 10px 0;
 }
+
 .social-footer {
     display: flex;
     justify-content: center;
@@ -43,10 +47,12 @@ footer {
     gap: 39px;
     font-size: 20px;
 }
-.social-sticky a{
+
+.social-sticky a {
     transition: .2s ease-in-out;
 }
-.social-sticky a:hover{
+
+.social-sticky a:hover {
     transform: translateY(-5px);
 }
 
@@ -64,10 +70,12 @@ footer {
     right: -16px;
 
 }
+
 .email-sticky a {
     transform: rotate(90deg);
     transition: .2s ease-in-out;
 }
+
 .email-sticky a:hover {
     margin-bottom: 10px;
 }
@@ -76,9 +84,11 @@ footer {
     .social-sticky {
         visibility: visible;
     }
+
     .social-footer {
         display: none;
     }
+
     .email-sticky {
         visibility: visible;
     }

@@ -65,7 +65,7 @@ export default function Add() {
 
     return (
         <div>
-            <button onClick={() => SetShowForm(!ShowForm)} className='add-btn'><i class={ShowForm ? "fa-solid fa-right-from-bracket" : "fa-solid fa-folder-plus"} ></i></button>
+            <button onClick={() => SetShowForm(!ShowForm)} className='add-btn'><i className={ShowForm ? "fa-solid fa-right-from-bracket" : "fa-solid fa-folder-plus"} ></i></button>
             {ShowForm ?
                 <div className='bg-form'>
 

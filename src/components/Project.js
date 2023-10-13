@@ -30,8 +30,8 @@ export default function project() {
                                 <b>JavasScript</b> <b>CSS</b> <b>API</b>
                             </div>
                             <div className='btn-project'>
-                                <a href='https://github.com/JuneRhomel/MINI-PROJECT-2' target="_blank" rel="noopener noreferrer" class="fa-brands fa-github"></a>
-                                <a href='https://educadamy.pages.dev/' target="_blank" rel="noopener noreferrer" class="fa-solid fa-arrow-up-right-from-square"></a>
+                                <a href='https://github.com/JuneRhomel/MINI-PROJECT-2' target="_blank" rel="noopener noreferrer" className="fa-brands fa-github"></a>
+                                <a href='https://educadamy.pages.dev/' target="_blank" rel="noopener noreferrer" className="fa-solid fa-arrow-up-right-from-square"></a>
                             </div>
                         </div>
                     </div>
@@ -56,8 +56,8 @@ export default function project() {
                                 <b>JavasScript</b> <b>CSS</b>
                             </div>
                             <div className='btn-project'>
-                                <a href='https://github.com/JuneRhomel/mini-project' target="_blank" rel="noopener noreferrer" class="fa-brands fa-github"></a>
-                                <a href='https://pufftea.pages.dev/' target="_blank" rel="noopener noreferrer" class="fa-solid fa-arrow-up-right-from-square"></a>
+                                <a href='https://github.com/JuneRhomel/mini-project' target="_blank" rel="noopener noreferrer" className="fa-brands fa-github"></a>
+                                <a href='https://pufftea.pages.dev/' target="_blank" rel="noopener noreferrer" className="fa-solid fa-arrow-up-right-from-square"></a>
                             </div>
                         </div>
                     </div>
@@ -81,8 +81,8 @@ export default function project() {
                             <b>Vs Code</b> <b>CSS</b> <b>React.js</b> <b>PHP</b><b>MySql</b><b>Rest API</b>
                             </div>
                             <div className='btn-project'>
-                                <a href='https://github.com/SetSaito/hotel-booking' target="_blank" rel="noopener noreferrer" class="fa-brands fa-github"></a>
-                                <a href='https://soria-hotel.web.app/' target="_blank" rel="noopener noreferrer" class="fa-solid fa-arrow-up-right-from-square"></a>
+                                <a href='https://github.com/SetSaito/hotel-booking' target="_blank" rel="noopener noreferrer" className="fa-brands fa-github"></a>
+                                <a href='https://soria-hotel.web.app/' target="_blank" rel="noopener noreferrer" className="fa-solid fa-arrow-up-right-from-square"></a>
                             </div>
                         </div>
                     </div>

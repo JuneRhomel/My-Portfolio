@@ -58,25 +58,21 @@ const logo = [
     },
 ]
 
-
-
-
-
 export default function Tools() {
 
     const listlogo = logo.map((item) => {
         return (
-            <div className='logo'key={item.text}>
-                <img  src={item.imgLogo} alt="" />
+            <div className='logo' key={item.text}>
+                <img src={item.imgLogo} alt="" />
                 <p>{item.text}</p>
             </div>
-            )
+        )
     })
     return (
-        <div className='logo-box'data-aos="fade-right">
+        <div className='logo-box' data-aos="fade-right">
             <h3><span>02.</span>Tools I Used <svg viewBox="0 0 308 1" fill="none">
-                    <line y1="0.65" x2="308" y2="0.65" stroke="#CCD6F6" stroke-width="0.7" />
-                </svg>
+                <line y1="0.65" x2="308" y2="0.65" stroke="#CCD6F6" strokeWidth="0.7" />
+            </svg>
             </h3>
             <p>Here are a few technologies I’ve been working with recently:</p>
             <div className='tools-logo'>
